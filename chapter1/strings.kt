@@ -6,6 +6,10 @@ fun main() {
     println("")
     println("<------String Templates------->")
     stringTemplates()
+
+    println("")
+    println("<------String Escape Sequences------->")
+    escapeSequences()
 }
 
 fun concatenation() {
@@ -32,4 +36,11 @@ fun stringTemplates() {
     val y = 30
     println("$x + $y")
     println("${ x + y}")
+}
+
+fun escapeSequences() {
+    /* the escape sequence \n represents a newline character, 
+    and \t represents a tab character. */
+    println("John is a way too common name \nto not know it as a christian")
+    println("Here is a sample of \t a tabbed string")
 }
