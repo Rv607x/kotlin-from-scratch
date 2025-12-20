@@ -3,6 +3,7 @@ fun main() {
     ifElse()
     elseIf()
     whenCondition()
+    whenCondition2()
 }
 
 fun ifCondition() {
@@ -46,5 +47,16 @@ fun whenCondition() {
         x == 0 -> println("x is zero")
         x < 0 -> println("x is negative")
         else -> println("x is not a real number")
+    }
+}
+
+fun whenCondition2() {
+    val hour = 19
+
+    when (hour) {
+        in 0..11 -> println("Good Morning")
+        in 12..16 -> println("Good afternoon")
+        in 17..23 -> println("Good Evening")
+        else -> println("Invalid hour")
     }
 }
