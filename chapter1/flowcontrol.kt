@@ -2,6 +2,7 @@ fun main() {
     ifCondition()
     ifElse()
     elseIf()
+    whenCondition()
 }
 
 fun ifCondition() {
@@ -35,4 +36,15 @@ fun elseIf() {
     }
     else
     println("a and b have same value: $a")
+}
+
+fun whenCondition() {
+    val x = 8
+
+    when {
+        x > 0 -> println("x is a positive int")
+        x == 0 -> println("x is zero")
+        x < 0 -> println("x is negative")
+        else -> println("x is not a real number")
+    }
 }
